@@ -8,6 +8,7 @@
     "devserver": "live-server",
     "compile:sass": "node-sass src/sass/main.scss dist/css/style.css",
     "scss:start": "npm-run-all --parallel devserver watch:sass",
+    "compress:css": "node-sass dist/css/style.css dist/css/style.min.css --output-style compressed",
     "dev": "webpack --mode development",
     "build": "webpack --mode production",
     "start": "webpack-dev-server --mode development --open"
