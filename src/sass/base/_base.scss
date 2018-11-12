@@ -1,0 +1,18 @@
+*,
+*::after,
+*::before {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    box-sizing: border-box;
+    overflow: hidden;
+    font-size: 1.4rem;
+    background-image: linear-gradient(to bottom right, #7AA2A4, #12394A);
+    color: $color-white;
+}

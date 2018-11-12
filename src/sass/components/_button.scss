@@ -1,0 +1,28 @@
+.button {
+    width: 15rem;
+    height: 7rem;
+    padding: .5rem;
+    margin: 2rem;
+    background-color: transparent;
+    border-radius: 2rem;
+    border: 2px solid $color-white;
+    color: $color-white;
+    font-size: 1.8rem;
+    transition: .3s;
+    outline: none;
+
+    &:hover {
+        background-color: $color-primary;
+        cursor: pointer;
+    }
+
+    @include respond(tab-port) {
+        width: 12rem;
+        height: 5rem;
+    }
+
+    @include respond(small-phone) {
+        height: 3rem;
+        font-size: 1rem;
+    }
+}
